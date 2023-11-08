@@ -3,8 +3,8 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-import { DiApple, DiAndroid } from "react-icons/di";
-import { FaDev, FaDatabase } from "react-icons/fa";
+import { DiApple, DiAndroid, DiReact, DiTrello, DiNodejs } from "react-icons/di";
+import { FaDev, FaDatabase, FaCss3, FaGit } from "react-icons/fa";
 
 const personalDetails = [
   {
@@ -94,16 +94,19 @@ const About = () => {
           >
             <div className="about__content__servicesWrapper__innerContent">
               <div>
-                <FaDev size={60} color="var( --yellow-theme-main-color)" />
+                <FaCss3 size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
-                <DiAndroid size={60} color="var( --yellow-theme-main-color)" />
+                <FaGit size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
-                <FaDatabase size={60} color="var( --yellow-theme-main-color)" />
+                <DiNodejs size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
                 <DiApple size={60} color="var( --yellow-theme-main-color)" />
+              </div>
+              <div>
+                <DiReact size={60} color="var( --yellow-theme-main-color)" />
               </div>
             </div>
           </Animate>
