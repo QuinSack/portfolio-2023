@@ -4,7 +4,7 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
 import { DiApple, DiAndroid, DiReact, DiTrello, DiNodejs } from "react-icons/di";
-import { FaDev, FaDatabase, FaCss3, FaGit } from "react-icons/fa";
+import { FaDev, FaDatabase, FaCss3, FaGit, FaJs } from "react-icons/fa";
 
 const personalDetails = [
   {
@@ -100,7 +100,7 @@ const About = () => {
                 <FaGit size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
-                <DiNodejs size={60} color="var( --yellow-theme-main-color)" />
+                <FaJs size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
                 <DiApple size={60} color="var( --yellow-theme-main-color)" />
