@@ -25,7 +25,15 @@ const personalDetails = [
   },
   {
     label: "Contact No",
-    value: "+233 550153624",
+    value: "+233 550153624 / +233 505651110",
+  },
+  {
+    label: "GitHub",
+    value: "https://github.com/QuinSack",
+  },
+  {
+    label: "LinkedIn",
+    value: "https://www.linkedin.com/in/divine-sackitey-624ab0194",
   },
 ];
 
