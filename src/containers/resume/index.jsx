@@ -19,7 +19,7 @@ const Resume = () => {
       />
       <div className="timeline">
         <div className="timeline__experience">
-          <h3 className="timeline__experience__header-text">Experience</h3>
+          <h3 className="timeline__experience__header-text">Work Experience</h3>
           <VerticalTimeline
             layout={"1-column"}
             lineColor="var(--yellow-theme-main-color)"
@@ -33,7 +33,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date= {item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -46,11 +46,14 @@ const Resume = () => {
                     {item.title}
                   </h3>
 
-                  <h4>
+                  <h4 style={{marginLeft: '120px'}}>
                     {item.subTitle}
                   </h4>
                 </div>
-                <p className="vertical-timeline-element-title-wrapper-description">{item.description} </p>
+                <h1 style={{marginTop: '20px', fontSize: '1.6rem'}}>
+                    Stack: {item.tools}
+                </h1>
+                <p className="vertical-timeline-element-title-wrapper-description">Tasks: {item.description} </p>
 
               </VerticalTimelineElement>
             ))}
@@ -71,7 +74,7 @@ const Resume = () => {
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -89,7 +92,7 @@ const Resume = () => {
                   </h4>
                 </div>
                 <p className="vertical-timeline-element-title-wrapper-description">{item.description} </p>
-
+              
               </VerticalTimelineElement>
             ))}
             </VerticalTimeline>
